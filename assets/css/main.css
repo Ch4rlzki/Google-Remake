@@ -1,0 +1,115 @@
+/* Global */
+
+html, body, main {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    height: 80vh;
+    min-height: 400px;
+    overflow-y: hidden;
+}
+
+a.link-primary {
+    text-decoration: none;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+/* Navigator */
+
+nav a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Search Bar */
+
+div.search-bar {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+div.search-bar:hover {
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .15);
+}
+
+div.search-bar .icon.search-bar-icon {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 426px) {
+    div.search-bar div.col-1 {
+        margin-right: .5rem;
+    }
+}
+
+/* Button Class */
+
+.btn {
+    color: #3c4043;
+    background-color: #f8f9fa;
+    margin: 11px 4px;
+}
+
+.btn:hover {
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .15);
+}
+
+/* Main Content */
+
+.main-content {
+    width: 55vh;
+}
+
+.main-content form input[name="q"] {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.main-content form button[type="submit"] {
+    border: none;
+    background-color: transparent;
+}
+
+.main-content form button[type="button"] {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 426px) {
+    .main-content {
+        width: 40vh;
+    }
+}
+
+@media (max-width: 376px) {
+    .main-content {
+        width: 32vh;
+    }
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
